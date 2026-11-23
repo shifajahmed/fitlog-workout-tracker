@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <main className="not-found"><span>404</span><h1>PAGE NOT FOUND</h1><p className="muted">This workout or page does not exist.</p><Link className="button button-primary" href="/">Back to workouts</Link></main>; }

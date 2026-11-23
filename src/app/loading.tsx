@@ -1,0 +1,1 @@
+export default function Loading() { return <main className="container loading-state"><div className="spinner"/><p>Loading FitLog...</p></main>; }
