@@ -4,7 +4,7 @@ import { getWorkouts } from "@/lib/api";
 
 export const dynamic = "force-dynamic";
 export default async function HomePage() {
-  let workouts = [];
+  let workouts: Awaited<ReturnType<typeof getWorkouts>> = [];
   let error = "";
   try { workouts = await getWorkouts(); }
   catch (e) { error = e instanceof Error ? e.message : "Unable to load workouts."; }
